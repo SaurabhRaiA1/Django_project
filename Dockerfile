@@ -5,7 +5,7 @@ WORKDIR /app
 COPY requirements.txt /app
 COPY icoder /app
 
-RUN sudo pip3 install -r requirements.txt && \
+RUN pip3 install -r requirements.txt && \
     cd /
 
 ENTRYPOINT ["python3"]
